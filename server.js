@@ -12,6 +12,10 @@ app.get('/report333', (req, res) => {
 	res.sendFile(path.join(__dirname, './public/info.html'));
 });
 
+app.get('/info', (req, res) => {
+	res.sendFile(path.join(__dirname, './public/info.html'));
+});
+
 app.get('/sec123', (req, res) => {
 	res.sendFile(path.join(__dirname, './secret/secret.html'));
 });
