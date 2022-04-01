@@ -22,4 +22,8 @@ body a {
 body img.imgConference {
   cursor: pointer;
 }
+
+body img.imgAudience {
+  width: 400px;
+}
 /*# sourceMappingURL=main.css.map */

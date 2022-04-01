@@ -2,6 +2,10 @@ import express from 'express';
 import path from 'path';
 const __dirname = path.resolve(path.dirname(''));
 
+const config = {
+	showImages: false
+};
+
 const app = express();
 const port = 3039;
 
@@ -15,8 +19,12 @@ app.get('/report333', (req, res) => {
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './public'));
 
+app.get('/', (req, res) => {
+	res.render('index', { showImages: config.showImages});
+});
+
 app.get('/info', (req, res) => {
-	res.render('info', { message: "Conference will take place in Berlin."});
+	res.render('info', { message: "Conference will take place in Berlin.", showImages: config.showImages});
 });
 
 app.get('/sec123', (req, res) => {
