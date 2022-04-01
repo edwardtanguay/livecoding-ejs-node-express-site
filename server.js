@@ -12,8 +12,11 @@ app.get('/report333', (req, res) => {
 	res.sendFile(path.join(__dirname, './public/info.html'));
 });
 
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './public'));
+
 app.get('/info', (req, res) => {
-	res.sendFile(path.join(__dirname, './public/info.html'));
+	res.render('info');
 });
 
 app.get('/sec123', (req, res) => {
