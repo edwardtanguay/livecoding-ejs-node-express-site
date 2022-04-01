@@ -18,4 +18,8 @@ body nav a {
 body a {
   color: #aaa;
 }
+
+body img.imgConference {
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */
