@@ -3,7 +3,7 @@ import path from 'path';
 const __dirname = path.resolve(path.dirname(''));
 
 const config = {
-	showImages: false
+	showImages: true
 };
 
 const app = express();
@@ -32,5 +32,5 @@ app.get('/sec123', (req, res) => {
 });
 
 app.listen(port, () => {
-	console.log(`Listening on port ${port}`);
+	console.log(`Listening at: http://localhost:${port}`);
 });
