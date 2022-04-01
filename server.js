@@ -3,7 +3,7 @@ import path from 'path';
 const __dirname = path.resolve(path.dirname(''));
 
 const app = express();
-const port = 3033;
+const port = 3039;
 
 const staticDirectory = path.join(__dirname, './public');
 app.use(express.static(staticDirectory));
