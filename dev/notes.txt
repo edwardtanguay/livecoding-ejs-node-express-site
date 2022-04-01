@@ -1,3 +1,5 @@
 - x install sass 
 - x add photo
-- .. click photo for more information
+- x click photo for more information
+- x ejs page create
+- .. pass information from server to EJS page

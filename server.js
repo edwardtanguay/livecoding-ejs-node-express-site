@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './public'));
 
 app.get('/info', (req, res) => {
-	res.render('info');
+	res.render('info', { message: "Conference will take place in Berlin."});
 });
 
 app.get('/sec123', (req, res) => {
